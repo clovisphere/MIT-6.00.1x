@@ -4,11 +4,5 @@
 s = ''
 
 # solution starts here
-valid_vowel = ['a', 'e', 'i', 'o', 'u']
-number_of_vowel = 0
-
-for letter in s:
-    if letter.lower() in valid_vowel:
-        number_of_vowel += 1
-
-print('Number of vowels: {}'.format(number_of_vowel))
+valid_vowels = ['a', 'e', 'i', 'o', 'u'] 
+print('Number of vowels: {}'.format(len([v for v in s if v in valid_vowels])))
